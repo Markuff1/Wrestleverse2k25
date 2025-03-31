@@ -1,0 +1,156 @@
+.ChampionshipBackground {
+    background: url(src/Images/Wrestleverse2K25BackgroundOS.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ChampionshipContainer {
+    background: url(src/Images/Wrestleverse2K25Background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    width: 70%;
+    min-height: 100vh;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+    max-height: calc(100vh - 8vh);
+    box-shadow: 0 0 10vh rgb(0, 0, 0);
+}
+
+.ChampionshipText1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    font-family: 'Impact';
+}
+
+/* Logo */
+.ChampionshipLogo {
+    height: 15vh;
+    margin-top: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.TitleHeaderImage {
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+}
+
+.ChampionshipTitle {
+    color: white;
+    font-size: 4vh;
+    font-family: 'Impact';
+    margin-top: 2vh;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Input Container */
+.InputContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+    margin-top: 2vh;
+}
+
+.InputContainer input {
+    padding: 1vh;
+    border-radius: 5px;
+    font-family:Impact;
+    font-size: 1.2vh;
+}
+
+.InputContainer button {
+    padding: 10px 15px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
+    font-family:Impact;
+}
+
+.InputContainer button:hover {
+    background-color: #004f98;
+}
+
+/* Table */
+.TitleHolderTable {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.TitleHolderTable th,
+.TitleHolderTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.TitleHolderTable th {
+    background-color: #0084ff;
+    color: white;
+    font-size: 1.5vw;
+    -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
+    font-family:Impact;
+}
+
+.TitleHolderTable tbody tr:nth-child(even) {
+    background-color: #606060;
+    -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
+    font-family:Impact;
+    font-size: 1vw;
+}
+
+.TitleHolderTable tbody tr:nth-child(odd) {
+    background-color: #454545;
+    -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
+    font-family:Impact;
+    font-size: 1vw;
+}
+
+.deletebutton {
+    padding: 10px 15px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
+    font-family:Impact;
+    font-size: 1vw;
+}
+
+.deletebutton:hover {
+    background-color: #004f98;
+}

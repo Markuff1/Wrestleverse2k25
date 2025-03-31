@@ -1,0 +1,52 @@
+.HomeBackground{
+    background: url(Images/Wrestleverse2K25BackgroundOS.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.HomeText1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 4vh;
+    font-family: 'Impact';
+}
+
+.HomeText2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 2vh;
+    font-family: 'Impact';
+    font-weight: lighter;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+.HomeContainer{
+    background: url(Images/Wrestleverse2K25Background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10vh rgb(0, 0, 0);
+}
+
+.Poster{
+    width: 60%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+}

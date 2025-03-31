@@ -1,0 +1,74 @@
+.ShowsBackground {
+    background: url(Images/Wrestleverse2K25BackgroundOS.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    position: fixed;
+    inset: 0;
+    overflow-y: scroll;
+}
+
+.ShowsText1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    font-size: 4vh;
+    font-family: 'Impact';
+}
+
+.SBanner {
+    height: auto;
+    width: 100%;
+    margin-top: 8vh;
+}
+
+.ShowsContainer {
+    background: url(Images/Wrestleverse2K25Background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    width: 70%;
+    min-height: 100vh; /* Ensures the container takes at least 100% of the viewport height */
+    height: auto; /* Allows the container to expand with content */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto; /* Enables scroll for the content */
+    max-height: calc(100vh - 8vh); /* Keeps it within the available height minus the header space */
+    padding-bottom: 20px; /* Adds some space at the bottom for better scroll behavior */
+    box-shadow: 0 0 10vh rgb(0, 0, 0);
+}
+
+.ShowsContainer::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for a cleaner look */
+}
+
+/* Weekly Shows Styling */
+.WeeklyShow {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    border: 5px solid #000000;
+    display: block;
+    box-shadow: 0 0 1vh rgb(0, 0, 0);
+}
+
+.centerPPV {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 0.2vw; /* Space between grid items */
+    justify-items: center;
+    align-items: center;
+    margin-left: 12.5%;
+    width: 100%;
+}
+
+.PPVShows {
+    width: 17vh;
+    height: 11vh;
+    border: 5px solid #000000;
+    box-shadow: 0 0 3vh rgb(0, 0, 0);
+}
