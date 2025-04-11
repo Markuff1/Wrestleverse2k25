@@ -1,5 +1,5 @@
 import React from "react";
-import "./ONS.css";
+import "../../PPVShow.css";
 import Header from "../../Header";
 import Footer from "../../Footer";
 
@@ -8,7 +8,7 @@ function ONS() {
     { match: "CM Punk Def. Roman Reigns", title: "Number 1 Contendership", type: "Extreme Rules"},	
     { match: "Oba Femi (C) Def. Sheamus ", title: "US Title", type: "2 Out Of 3 Falls"},			
     { match: "Piper Niven (C) Def. Chelsea Green", title: "WIC Title", type: "Table Match"},		
-    { match: "Dragon Lee Def. Je'von Evans (C) and Andrade and Ilja Dragunov and Carmelo Hayes and Dragon Lee", title: "IC Title", type: "Ladder Match"},		
+    { match: "Fatal 5 way for the IC Title", title: "IC Title", type: "Ladder Match"},		
     { match: "#DIY (C) Def. New Bloodline", title: "RAW Tag Team Titles", type: "Steel Cage"},		
     { match: "Cody Rhodes Def. Jacob Fatu", title: "--", type: "Extreme Rules"},		
     { match: "Naomi Def. Kairi Sane (C)", title: "Women's World Title", type: "Extreme Rules"},		
@@ -20,19 +20,19 @@ function ONS() {
   return (
     <>
       <Header />
-      <div className="ONSBackground">
-        <div className="ONSContainer">
+      <div className="PPVBackground">
+        <div className="PPVContainer">
           <img
-            className="ONSBanner"
+            className="PPVBanner"
             src="/src/Images/PPV/ONS/ONSHeader.png"
             alt="ONS Banner"
           />
 
-          <div className="ONSInfo">
-            <div className="ONSLocation">
+          <div className="PPVInfo">
+            <div className="PPVLocation">
               <strong>Location:</strong> Wells Fargo Center, Philadelphia, Pennsylvania
             </div>
-            <div className="ONSDate">
+            <div className="PPVDate">
               <strong>Date/Time:</strong> Saturday, July 26th, 2025
             </div>
           </div>

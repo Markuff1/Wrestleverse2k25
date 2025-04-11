@@ -1,5 +1,5 @@
 import React from "react";
-import "./Backlash.css";
+import "../../PPVShow.css";
 import Header from "../../Header";
 import Footer from "../../Footer";
 
@@ -20,19 +20,19 @@ function Backlash() {
   return (
     <>
       <Header />
-      <div className="BacklashBackground">
-        <div className="BacklashContainer">
+      <div className="PPVBackground">
+        <div className="PPVContainer">
           <img
-            className="BacklashBanner"
+            className="PPVBanner"
             src="/src/Images/PPV/Backlash/BacklashHeader.png"
             alt="Backlash Banner"
           />
 
-          <div className="BacklashInfo">
-            <div className="BacklashLocation">
+          <div className="PPVInfo">
+            <div className="PPVLocation">
               <strong>Location:</strong> Allstate Arena, Rosemont, Illinois
             </div>
-            <div className="BacklashDate">
+            <div className="PPVDate">
               <strong>Date/Time:</strong> Saturday, May 24th, 2025
             </div>
           </div>

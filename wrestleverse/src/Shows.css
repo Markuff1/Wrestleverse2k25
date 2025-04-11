@@ -67,8 +67,8 @@
 }
 
 .PPVShows {
-    width: 17vh;
-    height: 11vh;
+    width: 90%;
+    height: 10vw ;
     border: 5px solid #000000;
     box-shadow: 0 0 3vh rgb(0, 0, 0);
 }

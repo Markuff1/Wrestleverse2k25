@@ -1,30 +1,42 @@
 import React from "react";
-import "./Summerslam.css";
+import "../../PPVShow.css";
 import Header from "../../Header";
 import Footer from "../../Footer";
 
 function Summerslam() {
   const matchCard = [
-    { match: "Sheamus Def. Jey Uso", title: "US Title", type: "Singles Match" },
+    { match: "Seth Rollins Def. Kevin Owens", title: "--", type: "Extreme Rules Match" },
+    { match: "#DIY Def The New Bloodline", title: "RAW Tag Team Titles", type: "2 Out Of 3 Falls Match" },
+    { match: "Oba Femi Def Kane and Umaga", title: "United States Title", type: "Triple Threat Match" },
+    { match: "Piper Niven Def Nia Jax", title: "Women's Intercontinetal Title", type: "Normal Match" },
+    { match: "New Catch Republic Def. The Dudley Boys and Viking Raiders ", title: "Smackdown Tag Team Titles", type: "Triple Threat Tag Ladder Match" },
+    { match: "Raquel Roderiques Def. Sol Ruca ", title: "Women's United States Title", type: "Normal Match" },
+    { match: "Dragon Lee Def. Je'von Evans", title: "Intercontinental Title", type: "Normal Match" },
+    { match: "Naomi Def. Kairi Sane and Becky Lynch and Trish Stratus", title: "Women's World Title", type: "Fatal 4-Way Elimination Match" },
+    { match: "CM Punk Def. AJ Styles", title: "--", type: "Normal Match" },
+    { match: "Gunther Def. Drew McIntyre", title: "World Heavyweight Title", type: "Normal Match" },
+    { match: "Roxanne Perez Vs Charlotte Flair", title: "Women's Undisputed Title", type: "Last Woman Standing - Final Chance" },
+    { match: "Randy Orton Vs Roman Reigns", title: "WWE Undisputed Title", type: "Normal Match" }
+
   ];
 
   return (
     <>
       <Header />
-      <div className="SummerslamBackground">
-        <div className="SummerslamContainer">
+      <div className="PPVBackground">
+        <div className="PPVContainer">
           <img
-            className="SummerslamBanner"
+            className="PPVBanner"
             src="/src/Images/PPV/Summerslam/SummerslamHeader.png"
             alt="Summerslam Banner"
           />
 
-          <div className="SummerslamInfo">
-            <div className="SummerslamLocation">
-              <strong>Location:</strong> Allstate Arena, Rosemont, Illinois
+          <div className="PPVInfo">
+            <div className="PPVLocation">
+              <strong>Location:</strong> Cleveland Browns Stadium, Cleveland, Ohio
             </div>
-            <div className="SummerslamDate">
-              <strong>Date/Time:</strong> Saturday, May 24th, 2025
+            <div className="PPVDate">
+              <strong>Date/Time:</strong> 30th August 2025, 7e/5p
             </div>
           </div>
 
@@ -32,6 +44,7 @@ function Summerslam() {
           <table className="MCList">
             <thead>
               <tr>
+                <th>Match Number</th>
                 <th>Match</th>
                 <th>Title</th>
                 <th>Match Type</th>
@@ -40,6 +53,7 @@ function Summerslam() {
             <tbody>
               {matchCard.map((match, index) => (
                 <tr key={index}>
+                  <td>{index + 1}</td>
                   <td>{match.match}</td>
                   <td>{match.title}</td>
                   <td>{match.type}</td>

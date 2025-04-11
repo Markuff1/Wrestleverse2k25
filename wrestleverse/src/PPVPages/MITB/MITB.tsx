@@ -1,5 +1,5 @@
 import React from "react";
-import "./MITB.css";
+import "../../PPVShow.css";
 import Header from "../../Header";
 import Footer from "../../Footer";
 
@@ -19,19 +19,19 @@ function MITB() {
   return (
     <>
       <Header />
-      <div className="MITBBackground">
-        <div className="MITBContainer">
+      <div className="PPVBackground">
+        <div className="PPVContainer">
           <img
-            className="MITBBanner"
+            className="PPVBanner"
             src="/src/Images/PPV/MITB/MITBHeader.png"
             alt="MITB Banner"
           />
 
-          <div className="MITBInfo">
-            <div className="MITBLocation">
+          <div className="PPVInfo">
+            <div className="PPVLocation">
               <strong>Location:</strong> Scotiabank Arena, Toronto, Ontario, Canada
             </div>
-            <div className="MITBDate">
+            <div className="PPVDate">
               <strong>Date/Time:</strong> Saturday, June 21st, 2025
             </div>
           </div>

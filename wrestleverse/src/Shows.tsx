@@ -14,10 +14,10 @@ const ppvShows = [
   [
     { name: "NewYearRevolution", image: "/src/Images/PPV/NYR/NYR.png" },
     { name: "RoyalRumble", image: "/src/Images/PPV/RoyalRumble/RoyalRumble.png" },
-    { name: "EliminationChamber", image: "/src/Images/PPV/EliminationChamber/EliminationChamber.png" },
+    { name: "NoWayOut", image: "/src/Images/PPV/NoWayOut/NoWayOut.png" },
   ],
   [
-    { name: "Wrestlemania", image: "/src/Images/PPV/Wrestlemania/Wrestlemania.png" },
+    { name: "Wrestlemania", image: "/src/Images/PPV/Wrestlemania/Wrestlemania40.png" },
     { name: "Backlash", image: "/src/Images/PPV/Backlash/Backlash.png" },
     { name: "MITB", image: "/src/Images/PPV/MITB/MITB.png" },
   ],
@@ -29,7 +29,7 @@ const ppvShows = [
   [
     { name: "CyberSunday", image: "/src/Images/PPV/CyberSunday/CyberSunday.png" },
     { name: "SurvivorSeries", image: "/src/Images/PPV/SurvivorSeries/SurvivorSeries.png" },
-    { name: "Armageddon", image: "/src/Images/PPV/Armageddon/Armageddon.png" }
+    { name: "TLC", image: "/src/Images/PPV/TLC/TLC.png" }
   ]
 ];
 

@@ -138,8 +138,8 @@
     font-size: 1vw;
 }
 
-.deletebutton {
-    padding: 10px 15px;
+.deletebutton, .editbutton, .savebutton, .cancelbutton {
+    padding: 5px 8px;
     background-color: #0084ff;
     color: white;
     border: none;
@@ -149,8 +149,78 @@
     -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
     font-family:Impact;
     font-size: 1vw;
+    margin-left: 0.5vw;
 }
 
-.deletebutton:hover {
+.deletebutton:hover, .editbutton:hover, .savebutton:hover, .cancelbutton:hover {
     background-color: #004f98;
+}
+
+.reignstitle {
+    font-size: 1.5vw;
+    text-decoration: underline;
+    font-family: Impact;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    color: white;
+}
+
+.statstitle {
+    font-size: 1.5vw;
+    text-decoration: underline;
+    font-family: Impact;
+    text-align: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+    color: white;
+}
+
+.StatsContainer {
+    background: linear-gradient(145deg, #5493e0, #3b77c2);
+    width: 50%;
+    margin: 1.5vh auto;
+    border-radius: 3vh;
+    padding: 1.5vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.statcard {
+    background-color: white;
+    border-radius: 2.5vh;
+    padding: 1.2vh;
+    margin: 0.8vh;
+    min-width: 220px;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    font-family: Impact;
+    font-size: 1vw;
+    color: #234d84;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.statcard:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .statcard {
+        font-size: 2.5vw;
+        min-width: 100%;
+    }
+}
+
+
+.editname, .editreign, .editdate, .editeventwon{
+    background-color: #34414e;
+    color: white;
+    font-size: 1.2vw;
+    border-radius: 1vh;
+    font-family:Impact;
+    text-align: center;
 }
