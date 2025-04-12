@@ -19,10 +19,20 @@ import WomenIntercontinental from "./ChampionshipPages/WomenIntercontinentalCham
 import WomenUnitedStates from "./ChampionshipPages/WomenUnitedStatesChamp";
 import RawTagTeam from "./ChampionshipPages/RawTagTeamChamps";
 import SmackdownTagTeam from "./ChampionshipPages/SmackdownTagTeamChamps";
+
+
+
 import Backlash from "./PPVPages/Backlash/Backlash";
 import MITB from "./PPVPages/MITB/MITB";
 import ONS from "./PPVPages/ONS/ONS";
 import Summerslam from "./PPVPages/Summerslam/Summerslam";
+import NoMercy from "./PPVPages/NoMercy/NoMercy";
+import CyberSunday from "./PPVPages/CyberSunday/CyberSunday";
+import SurvivorSeries from "./PPVPages/SurvivorSeries/SurvivorSeries";
+import TLC from "./PPVPages/TLC/TLC";
+import NYR from "./PPVPages/NYR/NYR";
+import RoyalRumble from "./PPVPages/RoyalRumble/RoyalRumble";
+import NoWayOut from "./PPVPages/NoWayOut/NoWayOut";
 
 function App() {
   return (
@@ -61,6 +71,13 @@ function App() {
           <Route path="/MITB" element={<MITB />} />
           <Route path="/ONS" element={<ONS />} />
           <Route path="/Summerslam" element={<Summerslam />} />
+          <Route path="/NoMercy" element={<NoMercy />} />
+          <Route path="/CyberSunday" element={<CyberSunday />} />
+          <Route path="/SurvivorSeries" element={<SurvivorSeries />} />
+          <Route path="/TLC" element={<TLC />} />
+          <Route path="/NYR" element={<NYR />} />
+          <Route path="/RoyalRumble" element={<RoyalRumble />} />
+          <Route path="/NoWayOut" element={<NoWayOut />} />
         </Routes>
         <Footer/>
       </Router>

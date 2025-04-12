@@ -15,8 +15,8 @@ function Summerslam() {
     { match: "Naomi Def. Kairi Sane and Becky Lynch and Trish Stratus", title: "Women's World Title", type: "Fatal 4-Way Elimination Match" },
     { match: "CM Punk Def. AJ Styles", title: "--", type: "Normal Match" },
     { match: "Gunther Def. Drew McIntyre", title: "World Heavyweight Title", type: "Normal Match" },
-    { match: "Roxanne Perez Vs Charlotte Flair", title: "Women's Undisputed Title", type: "Last Woman Standing - Final Chance" },
-    { match: "Randy Orton Vs Roman Reigns", title: "WWE Undisputed Title", type: "Normal Match" }
+    { match: "Roxanne Perez Def. Charlotte Flair", title: "Women's Undisputed Title", type: "Last Woman Standing - Final Chance" },
+    { match: "Roman Reigns Def. Randy Orton", title: "WWE Undisputed Title", type: "Normal Match" }
 
   ];
 
