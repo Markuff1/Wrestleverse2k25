@@ -72,7 +72,6 @@ li, a {
     text-decoration: none;
     -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
 }
-
 /* Dropdown styles */
 .dropdown {
     position: relative;
@@ -151,5 +150,13 @@ li, a {
     }
 }
 
+.welcome-text {
+    font-size: 2.5vh;
+    font-family: 'Impact';
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-text-stroke: 0.02vh black; /* Thinner default text border */
+}
 
 

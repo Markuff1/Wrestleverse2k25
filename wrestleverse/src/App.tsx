@@ -33,15 +33,16 @@ import TLC from "./PPVPages/TLC/TLC";
 import NYR from "./PPVPages/NYR/NYR";
 import RoyalRumble from "./PPVPages/RoyalRumble/RoyalRumble";
 import NoWayOut from "./PPVPages/NoWayOut/NoWayOut";
+import Login from "./Login";
 
 function App() {
   return (
       
       <Router>
-        <Header/>
         <Routes>
           {/* Home route */}
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Login/>} />
+          <Route path="/Home" element={<Home/>} />
           
           {/* Nav Bar routes */}
           <Route path="/Roster" element={<Roster/>} />
@@ -79,7 +80,6 @@ function App() {
           <Route path="/RoyalRumble" element={<RoyalRumble />} />
           <Route path="/NoWayOut" element={<NoWayOut />} />
         </Routes>
-        <Footer/>
       </Router>
       
   );

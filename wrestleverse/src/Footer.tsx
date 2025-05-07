@@ -11,7 +11,7 @@ function Footer() {
   const handleSend = () => {
     if (!input.trim()) return;
     const userMessage = { sender: "user", text: input };
-    const aiReply = { sender: "ai", text: "Thanks for your question! Here's some info about Wrestleverse..." };
+    const aiReply = { sender: "ai", text: "Thanks for your question! Here's some info about Wrestleverse - Wrestleverse is a react made website to help " };
     setMessages([...messages, userMessage, aiReply]);
     setInput("");
   };
