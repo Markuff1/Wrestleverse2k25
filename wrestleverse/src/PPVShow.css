@@ -126,8 +126,8 @@
 }
 
 .MatchTitle {
-    font-size: 4vh;
-    letter-spacing: 0.3vh;
+    font-size: 4.5vh;
+    letter-spacing: 0.1vh;
     font-weight: 5vh;
     margin-top: 1.50vh;
     color: white;
@@ -152,7 +152,7 @@
 }
 
 .MatchImage {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-bottom: 5vh;
 }

@@ -5,8 +5,23 @@ import Footer from "../../Footer";
 
 function SurvivorSeries() {
   const matchCard = [
-    { match: "Sheamus Def. Jey Uso", title: "US Title", type: "Singles Match" },
+    { match: "Umaga Vs ????", title: null, type: "Normal"},		
+    { match: "#DIY Vs New Catch Republic", title: null, type: "Normal"},
+    { match: "Michelle McCool Vs Raquel Rodriques", title: null, type: "Normal"},
+    { match: "Bron Breakker Vs Damian Priest", title: null, type: "Normal"},
+    { match: "Team RAW Vs Team Smackdown", title: null, type: "5 on 5 Elimination"},
+    { match: "Tiffany Stratton Vs Rhea Ripley", title: null, type: "Normal"},
+    { match: "Roman Reigns Vs Cody Rhodes", title: null, type: "Normal"}
+      
   ];
+
+  // Function to scroll to match image
+  const scrollToMatch = (index: number) => {
+    const element = document.getElementById(`match-${index}`);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   return (
     <>
@@ -21,10 +36,10 @@ function SurvivorSeries() {
 
           <div className="PPVInfo">
             <div className="PPVLocation">
-              <strong>Location:</strong> Allstate Arena, Rosemont, Illinois
+              <strong>Location:</strong>  TD Garden, Boston, Massachusetts
             </div>
             <div className="PPVDate">
-              <strong>Date/Time:</strong> Saturday, May 24th, 2025
+              <strong>Date/Time:</strong> Saturday, 22nd November
             </div>
           </div>
 
@@ -32,6 +47,7 @@ function SurvivorSeries() {
           <table className="MCList">
             <thead>
               <tr>
+                <th>Match Number</th>
                 <th>Match</th>
                 <th>Title</th>
                 <th>Match Type</th>
@@ -39,10 +55,11 @@ function SurvivorSeries() {
             </thead>
             <tbody>
               {matchCard.map((match, index) => (
-                <tr key={index}>
+                <tr key={index} onClick={() => scrollToMatch(index)} style={{ cursor: "pointer" }}>
+                  <td>{index + 1}</td>
                   <td>{match.match}</td>
                   <td>{match.title}</td>
-                  <td>{match.type}</td>
+                  <td>{match.type} Match</td>
                 </tr>
               ))}
             </tbody>
@@ -51,8 +68,10 @@ function SurvivorSeries() {
           <div className="MCTitle">Match Card Summary</div>
           <div className="MatchImages">
             {matchCard.map((match, index) => (
-              <div key={index} className="MatchItem">
+              <div key={index} className="MatchItem" id={`match-${index}`}>
                 <h3 className="MatchTitle">{match.match}</h3>
+                <h3 className="MatchChampionship">{match.title}</h3>
+                <h3 className="MatchType">{match.type} match</h3>
                 <img
                   className="MatchImage"
                   src={`src/Images/PPV/SurvivorSeries/2025MC/M${index + 1}.png`}
@@ -62,6 +81,7 @@ function SurvivorSeries() {
               </div>
             ))}
           </div>
+          <div className="MatchDivider">--</div>
         </div>
       </div>
       <Footer />

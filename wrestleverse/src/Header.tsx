@@ -30,7 +30,7 @@ function Header() {
                   <Link to="/raw">RAW</Link>
                   <Link to="/SD">SMACKDOWN</Link>
                   <Link to="/Draft">DRAFT</Link>
-                  <Link to="/NoMercy">LATEST PPV</Link>
+                  <Link to="/SurvivorSeries">LATEST PPV</Link>
                 </div>
               </li>
               <li><Link to="/Roster">ROSTER</Link></li>

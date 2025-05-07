@@ -8,6 +8,7 @@ export interface Wrestler {
   tag?: string;
   tag2?: string;
   champion?: string;
+  championRank?: number;
 }
 
 const rosterData: Record<string, Wrestler[]> = {
@@ -27,7 +28,7 @@ const rosterData: Record<string, Wrestler[]> = {
       { src: "/src/Images/Roster/AustinTheory.png", name: "Austin Theory", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/Axiom.png", name: "Axiom", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/B-Fab.png", name: "B Fab", gender: "Women", tag: "R" , champion:""},
-      { src: "/src/Images/Roster/BaronCorbin.png", name: "Baron Corbin", gender: "Man", tag: "SD" , champion:""},
+      { src: "/src/Images/Roster/BaronCorbin.png", name: "Baron Corbin", gender: "Man", tag: "SD"},
       { src: "/src/Images/Roster/Batista.png", name: "Batista", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/Bayley.png", name: "Bayley", gender: "Women", tag: "R" , champion:""},
       { src: "/src/Images/Roster/BeckyLynch.png", name: "Becky Lynch", gender: "Women", tag: "SD" , champion:""},
@@ -40,7 +41,7 @@ const rosterData: Record<string, Wrestler[]> = {
 
       { src: "/src/Images/Roster/BraunStrowman.png", name: "Braun Strowman", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/BrayWyatt.png", name: "Bray Wyatt", gender: "Man", tag: "SD" , champion:""},
-      { src: "/src/Images/Roster/BronBreakker.png", name: "Bron Breakker", gender: "Man", tag: "R" , champion:""},
+      { src: "/src/Images/Roster/BronBreakker.png", name: "Bron Breakker", gender: "Man", tag: "R" , champion:"US",championRank:5},
       { src: "/src/Images/Roster/BronsonReed.png", name: "Bronson Reed", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/BrooksJensen.png", name: "Brooks Jensen", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/BrutusCreed.png", name: "Brutus Creed", gender: "Man", tag: "R" , champion:""},
@@ -58,19 +59,19 @@ const rosterData: Record<string, Wrestler[]> = {
       { src: "/src/Images/Roster/ChelseaGreen.png", name: "Chelsea Green", gender: "Women", tag: "R" , champion:""},
       { src: "/src/Images/Roster/Chyna.png", name: "Chyna", gender: "Women", tag: "L" , champion:""},
       { src: "/src/Images/Roster/CMPunk.png", name: "CM Punk", gender: "Man", tag: "R" , champion:""},
-      { src: "/src/Images/Roster/CodyRhodes.png", name: "Cody Rhodes", gender: "Man", tag: "SD" , champion:"MMITB"},
+      { src: "/src/Images/Roster/CodyRhodes.png", name: "Cody Rhodes", gender: "Man", tag: "SD" , champion:"WH", championRank:2},
       { src: "/src/Images/Roster/CoraJade.png", name: "Cora Jade", gender: "Women", tag: "R" , champion:""},
       { src: "/src/Images/Roster/CruzDelToro.png", name: "Cruz Del Toro", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/DakotaKai.png", name: "Dakota Kai", gender: "Women", tag: "R" , champion:""},
       { src: "/src/Images/Roster/D-VonDudley.png", name: "D-Von Dudley", gender: "Man", tag: "SD" , champion:""},
-      { src: "/src/Images/Roster/DamianPriest.png", name: "Damian Priest", gender: "Man", tag: "SD" , champion:""},
+      { src: "/src/Images/Roster/DamianPriest.png", name: "Damian Priest", gender: "Man", tag: "SD" , champion:"IC",championRank:6},
       { src: "/src/Images/Roster/DDP.png", name: "DDP", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/DexterLumis.png", name: "Dexter Lumis", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/Diesel.png", name: "Diesel", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/DoinkTheClown.png", name: "Doink The Clown", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/DominikMysterio.png", name: "Dominik Mysterio", gender: "Man", tag: "SD" , champion:""},
-      { src: "/src/Images/Roster/DragonLee.png", name: "Dragon Lee", gender: "Man", tag: "SD" , champion:"IC"},
-      { src: "/src/Images/Roster/DrewMcintyre.png", name: "Drew Mcintyre", gender: "Man", tag: "SD" , champion:"WH"},
+      { src: "/src/Images/Roster/DragonLee.png", name: "Dragon Lee", gender: "Man", tag: "SD" , champion:""},
+      { src: "/src/Images/Roster/DrewMcintyre.png", name: "Drew Mcintyre", gender: "Man", tag: "SD" , champion:""},
 
       { src: "/src/Images/Roster/DudeLove.png", name: "Dude Love", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/DukeHudson.png", name: "Duke Hudson", gender: "Man", tag: "R" , champion:""},
@@ -150,42 +151,42 @@ const rosterData: Record<string, Wrestler[]> = {
       { src: "/src/Images/Roster/Maryse.png", name: "Maryse", gender: "Women", tag: "L" , champion:""},
 
       { src: "/src/Images/Roster/MaxxineDupri.png", name: "Maxxine Dupri", gender: "Women", tag: "R" , champion:""},
-      { src: "/src/Images/Roster/MichelleMcCool.png", name: "Michelle McCool", gender: "Women", tag: "R" , champion:""},
+      { src: "/src/Images/Roster/MichelleMcCool.png", name: "Michelle McCool", gender: "Women", tag: "R" , champion:"WIC",championRank:8},
       { src: "/src/Images/Roster/Michin.png", name: "Michin", gender: "Women", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/MickFoley.png", name: "Mick Foley", gender: "Man", tag: "UNDRAFTED", champion:""},
       { src: "/src/Images/Roster/MightyMolly.png", name: "Mighty Molly", gender: "Women", tag: "L" , champion:""},
       { src: "/src/Images/Roster/MollyHolly.png", name: "Molly Holly", gender: "Women", tag: "L" , champion:""},
       { src: "/src/Images/Roster/MontezFord.png", name: "Montez Ford", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/MrPerfect.png", name: "Mr Perfect", gender: "Man", tag: "L" , champion:""},
-      { src: "/src/Images/Roster/Naomi.png", name: "Naomi", gender: "Women", tag: "SD" , champion:"WWH"},
+      { src: "/src/Images/Roster/Naomi.png", name: "Naomi", gender: "Women", tag: "SD"},
       { src: "/src/Images/Roster/Natalya.png", name: "Natalya", gender: "Women", tag: "R" , champion:""},
       { src: "/src/Images/Roster/NathanFrazer.png", name: "Nathan Frazer", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/NiaJax.png", name: "Nia Jax", gender: "Women", tag: "R" , champion:""},
       { src: "/src/Images/Roster/NikkiCross.png", name: "Nikki Cross", gender: "Women", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/NikkitaLyons.png", name: "Nikkita Lyons", gender: "Women", tag: "R" , champion:""},
       { src: "/src/Images/Roster/NoamDar.png", name: "Noam Dar", gender: "Man", tag: "R" , champion:""},
-      { src: "/src/Images/Roster/ObaFemi.png", name: "Oba Femi", gender: "Man", tag: "R" , champion:"US"},
+      { src: "/src/Images/Roster/ObaFemi.png", name: "Oba Femi", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/Omos.png", name: "Omos", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/OroMensah.png", name: "Oro Mensah", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/Otis.png", name: "Otis", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/PatMcafee.png", name: "Pat Mcafee", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/PeteDunne.png", name: "Pete Dunne", gender: "Man", tag: "SD" , champion:""},
-      { src: "/src/Images/Roster/PiperNiven.png", name: "Piper Niven", gender: "Women", tag: "R" , champion:"WIC"},
+      { src: "/src/Images/Roster/PiperNiven.png", name: "Piper Niven", gender: "Women", tag: "R"},
       { src: "/src/Images/Roster/R-Truth.png", name: "R-Truth", gender: "Man", tag: "R" , champion:""},
-      { src: "/src/Images/Roster/RandyOrton.png", name: "Randy Orton", gender: "Man", tag: "R" , champion:"UC"},
-      { src: "/src/Images/Roster/RaquelRodriguez.png", name: "Raquel Rodriguez", gender: "Women", tag: "SD" , champion:""},
+      { src: "/src/Images/Roster/RandyOrton.png", name: "Randy Orton", gender: "Man", tag: "R" , champion:""},
+      { src: "/src/Images/Roster/RaquelRodriguez.png", name: "Raquel Rodriguez", gender: "Women", tag: "SD" , champion:"WUS",championRank:9},
       { src: "/src/Images/Roster/RazorRamon.png", name: "Razor Ramon", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/ReyMysterio.png", name: "Rey Mysterio", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/Rezar.png", name: "Rezar", gender: "Man", tag: "SD" , champion:""},
-      { src: "/src/Images/Roster/RheaRipley.png", name: "Rhea Ripley", gender: "Women", tag: "SD" , champion:""},
+      { src: "/src/Images/Roster/RheaRipley.png", name: "Rhea Ripley", gender: "Women", tag: "SD" , champion:"WWH",championRank:4},
       { src: "/src/Images/Roster/RickySteamboat.png", name: "Ricky Steamboat", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/RidgeHolland.png", name: "Ridge Holland", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/Rikishi.png", name: "Rikishi", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/RobVanDam.png", name: "Rob Van Dam", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/RoddyPiper.png", name: "Roddy Piper", gender: "Man", tag: "L" , champion:""},
-      { src: "/src/Images/Roster/RomanReigns.png", name: "Roman Reigns", gender: "Man", tag: "R" , champion:""},
+      { src: "/src/Images/Roster/RomanReigns.png", name: "Roman Reigns", gender: "Man", tag: "R" , champion:"UC", championRank:1},
       { src: "/src/Images/Roster/Rosey.png", name: "Rosey", gender: "Man", tag: "L" , champion:""},
-      { src: "/src/Images/Roster/RoxannePerez.png", name: "Roxanne Perez", gender: "Women", tag: "R" , champion:"WUC"},
+      { src: "/src/Images/Roster/RoxannePerez.png", name: "Roxanne Perez", gender: "Women", tag: "R"},
       { src: "/src/Images/Roster/SamiZayn.png", name: "Sami Zayn", gender: "Man", tag: "R" , champion:""},
 
       { src: "/src/Images/Roster/Sandman.png", name: "Sandman", gender: "Man", tag: "L" , champion:""},
@@ -201,7 +202,7 @@ const rosterData: Record<string, Wrestler[]> = {
       { src: "/src/Images/Roster/ShinsukeNakamura.png", name: "Shinsuke Nakamura", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/Shotzi.png", name: "Shotzi", gender: "Women", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/SoloSikoa.png", name: "Solo Sikoa", gender: "Man", tag: "R" , champion:""},
-      { src: "/src/Images/Roster/SolRuca.png", name: "Sol Ruca", gender: "Women", tag: "SD" , champion:"WUS"},
+      { src: "/src/Images/Roster/SolRuca.png", name: "Sol Ruca", gender: "Women", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/SonyaDeville.png", name: "Sonya Deville", gender: "Women", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/StacyKeibler.png", name: "Stacy Keibler", gender: "Women", tag: "L" , champion:""},
       { src: "/src/Images/Roster/Stardust.png", name: "Stardust", gender: "Man", tag: "L" , champion:""},
@@ -220,7 +221,7 @@ const rosterData: Record<string, Wrestler[]> = {
       { src: "/src/Images/Roster/TheIronSheik.png", name: "The Iron Sheik", gender: "Man", tag: "L" , champion:""},
       { src: "/src/Images/Roster/TheMiz.png", name: "The Miz", gender: "Man", tag: "SD" , champion:""},
       { src: "/src/Images/Roster/TheRock.png", name: "The Rock", gender: "Man", tag: "R" , tag2: "GM", champion:""},
-      { src: "/src/Images/Roster/TiffanyStratton.png", name: "Tiffany Stratton", gender: "Women", tag: "R" , champion:""},
+      { src: "/src/Images/Roster/TiffanyStratton.png", name: "Tiffany Stratton", gender: "Women", tag: "R" , champion:"WUC",championRank:3},
       { src: "/src/Images/Roster/TommasoCiampa.png", name: "Tommaso Ciampa", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/TongaLoa.png", name: "Tonga Loa", gender: "Man", tag: "R" , champion:""},
       { src: "/src/Images/Roster/TonyD'Angelo.png", name: "Tony D'Angelo", gender: "Man", tag: "SD" , champion:""},
@@ -259,12 +260,12 @@ const rosterData: Record<string, Wrestler[]> = {
     { src: "/src/Images/Roster/TagTeam/AOP.png", name: "AOP", tag: "SD", champion:""},
     { src: "/src/Images/Roster/TagTeam/ChaseU.png", name: "Chase U", tag: "RAW", champion:""},
     { src: "/src/Images/Roster/TagTeam/DIY.png", name: "DIY", tag: "RAW", champion:"RAWTT"},
-    { src: "/src/Images/Roster/TagTeam/DudleyBoys.png", name: "Dudley Boys", tag: "SD", champion:"SDTT"},
+    { src: "/src/Images/Roster/TagTeam/DudleyBoys.png", name: "Dudley Boys", tag: "SD", champion:""},
     { src: "/src/Images/Roster/TagTeam/Gallus.png", name: "Gallus", tag: "RAW", champion:""},
     { src: "/src/Images/Roster/TagTeam/JudgementDay.png", name: "Judgement Day", tag: "SD", champion:""},
     { src: "/src/Images/Roster/TagTeam/Lorenzo&D'Angelo.png", name: "Lorenzo & D'Angelo", tag: "RAW", champion:""},
     { src: "/src/Images/Roster/TagTeam/LWO.png", name: "LWO", tag: "RAW", champion:""},
-    { src: "/src/Images/Roster/TagTeam/NCR.png", name: "New Catch Republic", tag: "SD", champion:""},
+    { src: "/src/Images/Roster/TagTeam/NCR.png", name: "New Catch Republic", tag: "SD", champion:"SDTT"},
     { src: "/src/Images/Roster/TagTeam/NewBloodline.png", name: "New Bloodline", tag: "RAW", champion:""},
     { src: "/src/Images/Roster/TagTeam/NewDay.png", name: "New Day", tag: "RAW", champion:""},
     { src: "/src/Images/Roster/TagTeam/OC.png", name: "OC", tag: "RAW", champion:""},
@@ -278,11 +279,11 @@ const rosterData: Record<string, Wrestler[]> = {
   GM: []
 };
 
-
 // Assign appropriate className based on champion
 rosterData.ALL.forEach(wrestler => {
   if (wrestler.champion) {
     wrestler.className = wrestler.champion;
+    rosterData.Champions.push(wrestler);
   } else if (wrestler.tag === "R") {
     wrestler.className = "ALLRAW";
   } else if (wrestler.tag === "SD") {
@@ -298,12 +299,12 @@ rosterData.ALL.forEach(wrestler => {
 rosterData["Tag Teams"].forEach(tagTeam => {
   if (tagTeam.champion) {
     tagTeam.className = tagTeam.champion;
+    rosterData.Champions.push(tagTeam);
   } else if (tagTeam.tag === "RAW") {
     tagTeam.className = "ALLRAW";
   } else if (tagTeam.tag === "SD") {
     tagTeam.className = "ALLSD";
   }
 });
-
 
 export default rosterData;

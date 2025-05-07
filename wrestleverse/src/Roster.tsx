@@ -15,11 +15,6 @@ const RosterTabs: React.FC = () => {
 
   // Function to filter wrestlers by tab and search term
   const filteredRoster = (tab: string) => {
-    let filteredData = rosterData[tab]?.filter(item =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    // Dynamically update filtered tabs
     if (tab === "ALL") {
       rosterData.RAW = rosterData.ALL.filter(item => item.tag === "R");
       rosterData.SMACKDOWN = rosterData.ALL.filter(item => item.tag === "SD");
@@ -28,7 +23,16 @@ const RosterTabs: React.FC = () => {
       rosterData.Men = rosterData.ALL.filter(item => item.gender === "Man");
       rosterData.Women = rosterData.ALL.filter(item => item.gender === "Women");
       rosterData.GM = rosterData.ALL.filter(item => item.tag2 === "GM");
-      rosterData.Champions = rosterData.ALL.filter(item => item.champion); // Champions tab update
+      rosterData.Champions = rosterData.ALL.filter(item => item.champion);
+    }
+
+    let filteredData = rosterData[tab]?.filter(item =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    // Sort Champions tab by championRank if available
+    if (tab === "Champions" && filteredData) {
+      filteredData = [...filteredData].sort((a, b) => (a.championRank ?? 999) - (b.championRank ?? 999));
     }
 
     return filteredData;

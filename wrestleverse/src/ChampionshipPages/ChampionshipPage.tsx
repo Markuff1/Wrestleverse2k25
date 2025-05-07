@@ -176,6 +176,7 @@ const ChampionshipPage: React.FC<ChampionshipPageProps> = ({ collectionId, banne
               ))}
             </tbody>
           </table>
+          <div className="statstitle">----</div>
         </div>
       </div>
     </div>

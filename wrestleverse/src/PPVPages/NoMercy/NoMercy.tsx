@@ -48,6 +48,7 @@ function NoMercy() {
           <table className="MCList">
             <thead>
               <tr>
+                <th>Match Number</th>
                 <th>Match</th>
                 <th>Title</th>
                 <th>Match Type</th>
@@ -56,6 +57,7 @@ function NoMercy() {
             <tbody>
               {matchCard.map((match, index) => (
                 <tr key={index} onClick={() => scrollToMatch(index)} style={{ cursor: "pointer" }}>
+                  <td>{index + 1}</td>
                   <td>{match.match}</td>
                   <td>{match.title}</td>
                   <td>{match.type} Match</td>
