@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProtectedRoute from "./ProtectedRoute";
+
 import Home from "./Home";
 import Roster from "./Roster";
 import News from "./News";
 import Shows from "./Shows";
-import Header from "./Header";
-import Footer from "./Footer";
 import SD from "./SD";
 import RAW from "./RAW";
 import Draft from "./Draft";
@@ -20,8 +20,6 @@ import WomenUnitedStates from "./ChampionshipPages/WomenUnitedStatesChamp";
 import RawTagTeam from "./ChampionshipPages/RawTagTeamChamps";
 import SmackdownTagTeam from "./ChampionshipPages/SmackdownTagTeamChamps";
 
-
-
 import Backlash from "./PPVPages/Backlash/Backlash";
 import MITB from "./PPVPages/MITB/MITB";
 import ONS from "./PPVPages/ONS/ONS";
@@ -33,55 +31,53 @@ import TLC from "./PPVPages/TLC/TLC";
 import NYR from "./PPVPages/NYR/NYR";
 import RoyalRumble from "./PPVPages/RoyalRumble/RoyalRumble";
 import NoWayOut from "./PPVPages/NoWayOut/NoWayOut";
+
 import Login from "./Login";
 
 function App() {
   return (
-      
-      <Router>
-        <Routes>
-          {/* Home route */}
-          <Route path="/" element={<Login/>} />
-          <Route path="/Home" element={<Home/>} />
-          
-          {/* Nav Bar routes */}
-          <Route path="/Roster" element={<Roster/>} />
-          <Route path="/News" element={<News/>} />
-          <Route path="/Shows" element={<Shows/>} />
+    <Router>
+      <Routes>
+        {/* Public Route */}
+        <Route path="/" element={<Login />} />
 
-          {/* Weekly Shows routes */}
-          <Route path="/RAW" element={<RAW/>} />
-          <Route path="/SD" element={<SD/>} />
-          <Route path="/Draft" element={<Draft/>} />
+        {/* Protected Routes */}
+        <Route path="/Home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
+        <Route path="/Roster" element={<ProtectedRoute><Roster /></ProtectedRoute>} />
+        <Route path="/News" element={<ProtectedRoute><News /></ProtectedRoute>} />
+        <Route path="/Shows" element={<ProtectedRoute><Shows /></ProtectedRoute>} />
 
+        {/* Weekly Shows */}
+        <Route path="/RAW" element={<ProtectedRoute><RAW /></ProtectedRoute>} />
+        <Route path="/SD" element={<ProtectedRoute><SD /></ProtectedRoute>} />
+        <Route path="/Draft" element={<ProtectedRoute><Draft /></ProtectedRoute>} />
 
-          {/* Championship routes */}
-          <Route path="/WWEUndisputedChamp" element={<WWEUndisputed />} />
-          <Route path="/WomenUndisputedChamp" element={<WomenUndisputed />} />
-          <Route path="/WorldHeavyweightChamp" element={<WorldHeavyweight />} />
-          <Route path="/WomenWorldChamp" element={<WomenWorld />} />
-          <Route path="/IntercontinentalChamp" element={<Intercontinental />} />
-          <Route path="/UnitedStatesChamp" element={<UnitedStates />} />
-          <Route path="/WomenIntercontinentalChamp" element={<WomenIntercontinental />} />
-          <Route path="/WomenUnitedStatesChamp" element={<WomenUnitedStates />} />
-          <Route path="/RawTagTeamChamps" element={<RawTagTeam />} />
-          <Route path="/SmackdownTagTeamChamps" element={<SmackdownTagTeam />} />
+        {/* Championship Pages */}
+        <Route path="/WWEUndisputedChamp" element={<ProtectedRoute><WWEUndisputed /></ProtectedRoute>} />
+        <Route path="/WomenUndisputedChamp" element={<ProtectedRoute><WomenUndisputed /></ProtectedRoute>} />
+        <Route path="/WorldHeavyweightChamp" element={<ProtectedRoute><WorldHeavyweight /></ProtectedRoute>} />
+        <Route path="/WomenWorldChamp" element={<ProtectedRoute><WomenWorld /></ProtectedRoute>} />
+        <Route path="/IntercontinentalChamp" element={<ProtectedRoute><Intercontinental /></ProtectedRoute>} />
+        <Route path="/UnitedStatesChamp" element={<ProtectedRoute><UnitedStates /></ProtectedRoute>} />
+        <Route path="/WomenIntercontinentalChamp" element={<ProtectedRoute><WomenIntercontinental /></ProtectedRoute>} />
+        <Route path="/WomenUnitedStatesChamp" element={<ProtectedRoute><WomenUnitedStates /></ProtectedRoute>} />
+        <Route path="/RawTagTeamChamps" element={<ProtectedRoute><RawTagTeam /></ProtectedRoute>} />
+        <Route path="/SmackdownTagTeamChamps" element={<ProtectedRoute><SmackdownTagTeam /></ProtectedRoute>} />
 
-          {/* PPV routes */}
-          <Route path="/Backlash" element={<Backlash />} />
-          <Route path="/MITB" element={<MITB />} />
-          <Route path="/ONS" element={<ONS />} />
-          <Route path="/Summerslam" element={<Summerslam />} />
-          <Route path="/NoMercy" element={<NoMercy />} />
-          <Route path="/CyberSunday" element={<CyberSunday />} />
-          <Route path="/SurvivorSeries" element={<SurvivorSeries />} />
-          <Route path="/TLC" element={<TLC />} />
-          <Route path="/NYR" element={<NYR />} />
-          <Route path="/RoyalRumble" element={<RoyalRumble />} />
-          <Route path="/NoWayOut" element={<NoWayOut />} />
-        </Routes>
-      </Router>
-      
+        {/* PPVs */}
+        <Route path="/Backlash" element={<ProtectedRoute><Backlash /></ProtectedRoute>} />
+        <Route path="/MITB" element={<ProtectedRoute><MITB /></ProtectedRoute>} />
+        <Route path="/ONS" element={<ProtectedRoute><ONS /></ProtectedRoute>} />
+        <Route path="/Summerslam" element={<ProtectedRoute><Summerslam /></ProtectedRoute>} />
+        <Route path="/NoMercy" element={<ProtectedRoute><NoMercy /></ProtectedRoute>} />
+        <Route path="/CyberSunday" element={<ProtectedRoute><CyberSunday /></ProtectedRoute>} />
+        <Route path="/SurvivorSeries" element={<ProtectedRoute><SurvivorSeries /></ProtectedRoute>} />
+        <Route path="/TLC" element={<ProtectedRoute><TLC /></ProtectedRoute>} />
+        <Route path="/NYR" element={<ProtectedRoute><NYR /></ProtectedRoute>} />
+        <Route path="/RoyalRumble" element={<ProtectedRoute><RoyalRumble /></ProtectedRoute>} />
+        <Route path="/NoWayOut" element={<ProtectedRoute><NoWayOut /></ProtectedRoute>} />
+      </Routes>
+    </Router>
   );
 }
 

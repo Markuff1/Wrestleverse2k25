@@ -1,17 +1,24 @@
 import "./Header.css";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
   const [breakingNews, setBreakingNews] = useState();
   const [username, setUsername] = useState("");
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedUsername = localStorage.getItem("username");
     if (storedUsername) {
-      setUsername(storedUsername);
+      setUsername(storedUsername);  //Gets the username to display
     }
   }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("username");
+    setUsername("");                     //Removes the username when you logout so that it secures the website for unauthorised users
+    navigate("/")                        //And takes you back to the login page
+  }
 
   return (
     <div>
@@ -43,7 +50,8 @@ function Header() {
               </li>
               <li><Link to="/Roster">ROSTER</Link></li>
               <li>
-                <div className="welcome-text">{username ? `Hi ${username}!!!!!` : ''}</div>
+                  <div className="welcome-text">{username ? `Hi ${username}!!!!!` : ''}</div>
+                  <button className="logoutButton" onClick={handleLogout}>LogOut</button>
               </li>
             </ul>
           </nav>
