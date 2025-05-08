@@ -66,9 +66,12 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-Background">
+      
       <div className="login-box">
+        <img className="Logo1" src="/src/Images/Wrestleverse2K25.png" alt="Logo" />
         <h2 className="login-title">{isRegistering ? 'Register' : 'Login'}</h2>
+        {error && <p className="login-error">{error}</p>}
         <input
           type="text"
           placeholder="Username"
@@ -83,7 +86,7 @@ const Login: React.FC = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {error && <p className="login-error">{error}</p>}
+        
         <button
           onClick={isRegistering ? handleRegister : handleLogin}
           className="login-button"
@@ -91,7 +94,7 @@ const Login: React.FC = () => {
           {isRegistering ? 'Register' : 'Login'}
         </button>
         <p className="toggle-text" onClick={() => setIsRegistering(!isRegistering)}>
-          {isRegistering ? 'Already have an account? Login' : 'No account? Register'}
+          {isRegistering ? 'Already have an account? Click here to Login' : 'No account? Click here to Register'}
         </p>
       </div>
     </div>
