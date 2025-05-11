@@ -1,9 +1,9 @@
 import "./Header.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
-  const [breakingNews, setBreakingNews] = useState();
+  const [breakingNews] = useState();
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
 

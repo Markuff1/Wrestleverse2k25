@@ -1,4 +1,3 @@
-import React from "react";
 import "../../PPVShow.css";
 import Header from "../../Header";
 import Footer from "../../Footer";

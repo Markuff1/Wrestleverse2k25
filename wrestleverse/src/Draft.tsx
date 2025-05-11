@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Draft.css";
 import Header from "./Header";
 import Footer from "./Footer";

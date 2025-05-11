@@ -1,4 +1,3 @@
-import React from "react";
 import "./Shows.css";
 import Header from "./Header";
 import Footer from "./Footer";

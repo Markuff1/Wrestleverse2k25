@@ -136,7 +136,7 @@ updateGenderTabs();
 const SDTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("ALL");
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState(SDData);
+  const [, setFilteredData] = useState(SDData);
 
   // Function to filter wrestlers by tab and search term
   const filteredSD = (tab: string) => {

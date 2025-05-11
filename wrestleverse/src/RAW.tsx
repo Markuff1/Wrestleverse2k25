@@ -138,7 +138,7 @@ updateGenderTabs();
 const RAWTabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("ALL");
   const [searchTerm, setSearchTerm] = useState("");
-  const [filteredData, setFilteredData] = useState(RAWData);
+  const [, setFilteredData] = useState(RAWData);
 
   // Function to filter wrestlers by tab and search term
   const filteredRAW = (tab: string) => {
