@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Roster.css";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./Header.tsx";
+import Footer from "./Footer.tsx";
 import ChampionshipBar from "./ChampionshipBar.tsx";
 import rosterData, { Wrestler } from "./RosterData.ts";
 
