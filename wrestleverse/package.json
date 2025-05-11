@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://thewrestleverse.co.uk",
+  "homepage": "https://markuff1.github.io/Wrestleverse2k25/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
