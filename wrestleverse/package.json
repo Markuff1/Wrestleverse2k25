@@ -1,16 +1,16 @@
 {
+  "homepage": "https://Markuff1.github.io/Wrestleverse2k25",
   "name": "wrestleverse",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://markuff1.github.io/Wrestleverse2k25/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^1.8.4",
