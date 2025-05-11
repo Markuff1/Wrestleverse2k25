@@ -1,0 +1,353 @@
+.RAWBackground {
+    background: url(Images/RAWBackground.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    position: fixed;
+    inset: 0;
+    overflow-y: scroll;
+}
+
+.SDBackground {
+    background: url(Images/Wrestleverse2K25BackgroundOS.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    position: fixed;
+    inset: 0;
+    overflow-y: scroll;
+}
+
+
+.RAWBanner, .SDBanner {
+    height: auto;
+    width: 100%;
+    margin-top: 8vh;
+}
+
+.RAWContainer, .SDContainer {
+    background: url(Images/Wrestleverse2K25Background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    width: 70%;
+    min-height: 100vh; /* Ensures the container takes at least 100% of the viewport height */
+    height: auto; /* Allows the container to expand with content */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto; /* Enables scroll for the content */
+    max-height: calc(100vh - 8vh); /* Keeps it within the available height minus the header space */
+    padding-bottom: 20px; /* Adds some space at the bottom for better scroll behavior */
+    box-shadow: 0 0 10vh rgb(0, 0, 0);
+}
+
+.RAWContainer::-webkit-scrollbar, .SDContainer::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for a cleaner look */
+}
+
+.RAWText1, .SDText1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    font-size: 3.5vh;
+    font-family: 'Impact';
+}
+
+.RAWText2, .SDText2{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 1.5vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.RAWText3, .SDText3{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 1vh;
+    margin-bottom: 0.5vh;
+    font-size: 3vh;
+    font-family:'Impact';
+}
+
+
+
+/* Tab Navigation Styling */
+.RAWTab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2vh;
+    margin-top: 2vh
+}
+
+.RAWtablinks {
+    background: rgb(70, 70, 70);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.RAWtablinks:hover {
+    background: rgb(226, 0, 0);
+    transform: scale(1.05);
+}
+
+.RAWtablinks.active {
+    background: #ffcc00;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Tab Content */
+.RAWtabcontent {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Tab Navigation Styling */
+.SDTab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2vh;
+    margin-top: 2vh
+}
+
+.SDtablinks {
+    background: rgb(70, 70, 70);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.SDtablinks:hover {
+    background: rgb(0, 105, 226);
+    transform: scale(1.05);
+}
+
+.SDtablinks.active {
+    background: #ffcc00;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
+}
+
+/* Tab Content */
+.SDtabcontent {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.centerRoster{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
+
+/*Smackdown Profiles*/
+
+.ALLSD{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background-image: url(src/Images/Roster/SD/SDBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.WH{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/WHBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+.IC{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/ICBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.WWH{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/WWHBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.SDTT{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/SDTTBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.MMITB{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/MMITB.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.WMITB{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/WMITB.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+/*RAW Profiles*/
+
+.ALLRAW{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background-image: url(src/Images/Roster/RAW/RAWBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.UC{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/UCBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+.US{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/USBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.WUC{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/WUCBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.RAWTT{
+    height: auto;
+    width: 16%;
+    opacity: 1;
+    background:url(src/Images/Roster/Champions/RAWTTBG.png);
+    background-size: 100% 100%;
+    margin-top: 2vh;
+}
+
+.RAWsearchBar {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #ffbf00;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+  
+.RAWsearchBar:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 10px rgba(185, 20, 20, 0.5);
+}
+
+.SDsearchBar {
+    width: 50%;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 2px solid #ffbf00;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+  
+.SDsearchBar:focus {
+    border-color: #0066ff;
+    box-shadow: 0 0 10px #002e72;
+}
+
+.SD-image, .RAW-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+.SD-image:hover, .RAW-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.SDLocation, .RAWLocation{
+    color: rgb(255, 255, 255);
+    margin-left: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+    font-weight: 500px;
+    font-family: impact;
+}
+
+.SDDate, .RAWDate{
+    color: rgb(255, 255, 255);
+    margin-right: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+    font-weight: 500px;
+    font-family: impact;
+}
+
+.SDInfo, .RAWInfo{
+    display: flex;
+    justify-content: space-between;
+}

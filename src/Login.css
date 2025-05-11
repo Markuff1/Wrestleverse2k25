@@ -1,0 +1,83 @@
+.login-Background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    background-color: #4885ff;
+}
+
+.Logo1{
+    height: auto;
+    width:  25vw;
+    margin-top: -5vh;
+}
+  
+.login-box {
+    background-color: white;
+    padding: 10vw;
+    border-radius: 5vh;
+    box-shadow: 0 1vh 5vh rgb(0, 0, 0);
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+  
+  .login-title {
+    font-size: 3vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+    text-align: center;
+  }
+  
+  .login-input {
+    width: 95%;
+    background-color: rgb(235, 240, 255);
+    padding: 1vh;
+    margin-bottom: 1.5vh;
+    border: 0.05 solid #000000;
+    border-radius: 0.90vh;
+    font-size: 2.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .login-error {
+    color: red;
+    text-align: center;
+    font-size: 2vh;
+    margin-bottom: 1.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .login-button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    padding: 2vh;
+    border: none;
+    border-radius: 0.90vh;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vw;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background-color: #0033a2;
+  }
+  
+  .toggle-text {
+    text-align: center;
+    margin-top: 1vh;
+    font-size: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0062ff;
+    cursor: pointer;
+  }
+  
