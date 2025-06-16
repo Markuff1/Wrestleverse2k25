@@ -1,0 +1,23 @@
+.NFBackground{
+    background: url(Images/Wrestleverse2K25BackgroundOS.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.NFContainer{
+    background: url(Images/Wrestleverse2K25Background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    width: 70%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10vh rgb(0, 0, 0);
+}

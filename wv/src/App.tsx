@@ -33,6 +33,9 @@ import RoyalRumble from "./PPVPages/RoyalRumble/RoyalRumble";
 import NoWayOut from "./PPVPages/NoWayOut/NoWayOut";
 
 import Login from "./Login";
+import NotFound from "./NotFound";
+import MMITB from "./ChampionshipPages/MMITB";
+import WMITB from "./ChampionshipPages/WMITB";
 
 function App() {
   return (
@@ -40,7 +43,8 @@ function App() {
       <Routes>
         {/* Public Route */}
         <Route path="/" element={<Login />} />
-
+        <Route path="*" element={<NotFound />} />
+        
         {/* Protected Routes */}
         <Route path="/Home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/Roster" element={<ProtectedRoute><Roster /></ProtectedRoute>} />
@@ -63,6 +67,8 @@ function App() {
         <Route path="/WomenUnitedStatesChamp" element={<ProtectedRoute><WomenUnitedStates /></ProtectedRoute>} />
         <Route path="/RawTagTeamChamps" element={<ProtectedRoute><RawTagTeam /></ProtectedRoute>} />
         <Route path="/SmackdownTagTeamChamps" element={<ProtectedRoute><SmackdownTagTeam /></ProtectedRoute>} />
+        <Route path="/MMITB" element={<ProtectedRoute><MMITB /></ProtectedRoute>} />
+        <Route path="/WMITB" element={<ProtectedRoute><WMITB /></ProtectedRoute>} />
 
         {/* PPVs */}
         <Route path="/Backlash" element={<ProtectedRoute><Backlash /></ProtectedRoute>} />

@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
-  const [breakingNews] = useState();
+  const [breakingNews] = useState("");
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
@@ -45,7 +45,7 @@ function Header() {
                   <Link to="/raw">RAW</Link>
                   <Link to="/SD">SMACKDOWN</Link>
                   <Link to="/Draft">DRAFT</Link>
-                  <Link to="/SurvivorSeries">LATEST PPV</Link>
+                  <Link to="/RoyalRumble">LATEST PPV</Link>
                 </div>
               </li>
               <li><Link to="/Roster">ROSTER</Link></li>

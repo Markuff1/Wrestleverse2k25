@@ -2,6 +2,8 @@ import "./ChampionshipStyle.css";
 import React, { useState, useEffect } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import { db } from "../firebaseConfig";
+import Header from "../Header";
+import Footer from "../Footer";
 
 type ChampionshipPageProps = {
   collectionId: string;
@@ -96,6 +98,7 @@ const ChampionshipPage: React.FC<ChampionshipPageProps> = ({ collectionId, banne
 
   return (
     <div>
+      <Header />
       <div className="ChampionshipBackground">
         <div className="ChampionshipContainer">
           <img className="TitleHeaderImage" src={bannerSrc} alt="Header Background" />
@@ -179,6 +182,7 @@ const ChampionshipPage: React.FC<ChampionshipPageProps> = ({ collectionId, banne
           <div className="statstitle">----</div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
